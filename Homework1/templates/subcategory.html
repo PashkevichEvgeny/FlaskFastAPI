@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block content %}
+   <div class="container-fluid">
+       <h2 class="col-12 col-md-6 display-3">
+           {{ title }}
+       </h2>
+   </div>
+   <div class="container-fluid">
+        {% for item in items%}
+            <h3 class="col-12 col-md-6 display-5">
+                <a href="/{{item.link}}/" class="nav-link"> {{item.name}} </a>
+            </h3>
+            Цена: {{item.price}}9.99
+        {% endfor %}
+   </div>
+{% endblock %}

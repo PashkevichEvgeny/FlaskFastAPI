@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ super() }} - {{ title }}
+{% endblock %}
+{% block content %}
+    <div class="container-fluid">
+        <div class="col-12 col-md-6 display-3">{{p.name}}</div>
+        <div class="col-12 col-md-6 display-4">Цена со скидкой {{p.price}}9.99</div>
+        <div class="col-12 col-md-6 display-4">Цена без скидки {{p.price * 2}}9.99 </div>
+        <img src="/static/image/{{p.id}}.jpg" class="col-12 col-md-6  img-fluid" alt="{{p.name}}">
+    </div>
+{% endblock %}
