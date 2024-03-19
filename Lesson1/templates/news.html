@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+<title>Новости</title>
+</head>
+<body>
+  {% for n in news %}
+    <h2 class="text-monospace">{{n.title}}</h2>
+    <p class="text-body text-justify">{{n.review}}</p>
+    <p class="text-body text-right">{{n.date}}</p>
+  {% endfor %}
+<p class="alert-dark">Все права защищены &copy;</p>
+</body>
+</html>

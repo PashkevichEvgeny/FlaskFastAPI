@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ super() }} - {{ title }}
+{% endblock %}
+{% block content %}
+<div class="row">
+  <h1>
+    {{ title }}
+  </h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      {% for t in table_title %}
+        <th scope="col">{{t}}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for s in students %}
+    <tr>
+      {% for val in s.values() %}
+      <td>{{val}}</td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<p class="alert-dark">Все права защищены &copy;</p>
+{% endblock %}
