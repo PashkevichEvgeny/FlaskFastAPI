@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+{% block content %}
+    <ul class="nav nav-pills justify-content-end align-items-end">
+        <li class="nav-item"><a href="/logout" class="nav-link">Выйти </a></li>
+    </ul>
+    <div class="container">
+        Добро пожаловать <h1> {{ name }} </h1>
+    </div>
+{% endblock %}
