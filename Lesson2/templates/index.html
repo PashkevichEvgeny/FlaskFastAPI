@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+{% block content %}
+    <img src="/static/image/foto.jpg" alt="Моё фото" width="300">
+    <p class="text-body text-justify"><a href="{{url}}" class="btn btn-primary btn-lg" role="button">{{name_button}}</a></p>
+{% endblock %}

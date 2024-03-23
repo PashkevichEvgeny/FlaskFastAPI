@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+{% block content %}
+<div class="container">
+        <form action="/submit" method="post">
+            <input type="{{type_date}}" name="name" placeholder="{{place_holder}}">
+            <input type="submit" value="{{name_button}}">
+        </form>
+</div>
+{% endblock %}

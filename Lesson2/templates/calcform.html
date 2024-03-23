@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+{% block content %}
+<div class="container">
+    <form action="/submit" method="post">
+      <div class="form-group">
+        <input type="text" class="form-control" name="a" placeholder="Введите число">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Выберите математическую операцию</label>
+        <select class="form-control" name="operation">
+          <option>Сложение +</option>
+          <option>Вычитание -</option>
+          <option>Умножение *</option>
+          <option>Деление /</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" name="b" placeholder="Введите число">
+      </div>
+      <button type="submit" class="btn btn-primary">{{name_button}}</button>
+    </form>
+</div>
+{% endblock %}
