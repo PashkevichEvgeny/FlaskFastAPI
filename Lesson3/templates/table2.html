@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ super() }} - {{ title }}
+{% endblock %}
+{% block content %}
+    <div class="row">
+        {% for st in students %}
+            <p class="col-12 col-md-6">
+                    Student name: {{ st.name }}, His grades:
+                {% for g in st.student_grade %}
+                    {{ g.name_subject }} - {{ g.grade }}
+                {% endfor %}
+            </p>
+        {% endfor %}
+    </div>
+{% endblock %}
