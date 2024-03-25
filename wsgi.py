@@ -5,7 +5,13 @@
 # from Lesson1.task5 import app
 # from Lesson1.task6 import app
 # from Lesson1.task7 import app
-from Lesson1.task8 import app
+# from Lesson1.task8 import app
+# from Lesson3.task1 import app
+# from Lesson3.task3 import app
+# from Lesson3.task4 import app
+# from Lesson3.task5 import app
+from Lesson3.task8 import app
+
 
 # Запуск сервера из терминала в режиме отладки
 # > flask run --debug

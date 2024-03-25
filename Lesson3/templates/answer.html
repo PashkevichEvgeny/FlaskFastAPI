@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ super() }} - {{ title }}
+{% endblock %}
+{% block content %}
+    <div class="row">
+        <p class="col-12 col-md-6">
+            {% if answer == 'yes' %}
+                <a href="{{ url_for('confirm') }}"> Подтвреждение </a>
+            {% elif answer == 'confirm' %}
+                Регистрация завершена {{ username }}!
+            {% else %}
+                {{ answer }}
+            {% endif %}
+        </p>
+    </div>
+{% endblock %}
