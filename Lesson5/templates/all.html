@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title> {{ title }} </title>
+</head>
+<body>
+<div>
+    <a href="/login"><h1> Форма </h1></a>
+</div>
+{% for user in users %}
+<div>
+    <h2>Hello, {{ user.name|title }}!</h2> {{ user.email }}
+</div>
+{% endfor %}
+</body>
+</html>
